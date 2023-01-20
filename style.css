@@ -72,7 +72,7 @@ header .container {
 }
 
 header .container img {
-    display: none;
+  display: none;
 }
 
 header .container button {
@@ -107,12 +107,12 @@ nav ul a {
 }
 
 nav ul a svg {
-    display: none;
+  display: none;
 }
 
 .about-me {
-    display: flex;
-    padding: 100px;
+  display: flex;
+  padding: 100px;
 }
 
 .about-me .container {
@@ -123,10 +123,31 @@ nav ul a svg {
 .about-me .img-container {
   width: 50%;
   text-align: center;
+  position: relative;
 }
 
 .about-me .img-container img {
   width: 70%;
+  height: 100%;
+}
+
+.about-me .img-container .line.purple {
+  width: calc(70% + 50px);
+  height: calc(100% + 50px);
+  position: absolute;
+  border: 1px solid var(--purple);
+  top: -25px;
+  left: calc(50% - 70% / 2 - 25px);
+}
+
+.about-me .img-container .line.green {
+  transform: rotate(-3.3deg);
+  width: calc(70% + 50px);
+  height: calc(100% + 50px);
+  position: absolute;
+  border: 1px solid var(--green);
+  top: -25px;
+  left: calc(50% - 70% / 2 - 25px);
 }
 
 /* RESPONSIVIDADE */
@@ -134,69 +155,69 @@ nav ul a svg {
 /* small desktops */
 
 @media (max-width: 1000px) {
-    nav ul a {
-        font-size: 18px;
-    }
+  nav ul a {
+    font-size: 18px;
+  }
 }
 
 header .container {
-    width: 100%;
+  width: 100%;
 }
 
 nav {
-    padding: 0 30px;
+  padding: 0 30px;
 }
 
 /* tablet */
 
 @media (max-width: 767px) {
-    header .container {
-        width: 100%;
-    }
+  header .container {
+    width: 100%;
+  }
 
-    header .container img {
-        display: inline;
-        margin-bottom: 70px;
-    }
+  header .container img {
+    display: inline;
+    margin-bottom: 70px;
+  }
 
-    nav {
-        padding: 0 30px;
-    }
+  nav {
+    padding: 0 30px;
+  }
 
-    nav img {
-        display: none;
-    }
+  nav img {
+    display: none;
+  }
 
-    nav ul {
-        padding: 0;
-    }
+  nav ul {
+    padding: 0;
+  }
 
-    nav ul a {
-        font-size: 16px;
-    }
+  nav ul a {
+    font-size: 16px;
+  }
 }
 
 /* celular */
 
 @media (max-width: 480px) {
-    header .container {
-        padding: 0 40px;
-    }
+  header .container {
+    padding: 0 40px;
+  }
 
-    nav {
-        padding: 0 15px;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        top: unset;
-    }
+  nav {
+    padding: 0 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    top: unset;
+  }
 
-    nav ul a svg {
-        display: block;
-        margin: 0 auto 10px;
-    }
+  nav ul a svg {
+    display: block;
+    margin: 0 auto 10px;
+  }
 
-    nav ul a {
-        font-size: 12px;
-    }
+  nav ul a {
+    font-size: 12px;
+  }
 }
